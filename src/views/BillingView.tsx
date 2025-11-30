@@ -20,9 +20,12 @@ export default function BillingView() {
                     <div className="border border-gray-300 mt-5 p-4 rounded">
                         <div className="flex flex-row justify-between">
                             <h4 className="font-medium text-lg">Juan Pérez García</h4>
-                            <span className="border border-green-600 py-0.5 px-5 bg-green-100 rounded-full text-green-600 font-medium">Activo</span>
+                            <span className="hidden sm:flex border border-green-600 py-0.5 px-5 bg-green-100 rounded-full text-green-600 font-medium">Activo</span>
                         </div>
-                        <p className="text-gray-700 mb-1">CLI-001</p>
+                        <div className="flex flex-row justify-between">
+                            <p className="text-gray-700 mb-1">CLI-001</p>
+                            <span className="flex sm:hidden border border-green-600 py-0.5 px-5 bg-green-100 rounded-full text-green-600 font-medium">Activo</span>
+                        </div>
                         <p className="text-gray-700">Calle Hidalgo 123, Centro</p>
                         <p className="text-gray-700">Tel: 555-1234</p>
                     </div>
